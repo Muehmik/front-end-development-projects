@@ -8,11 +8,11 @@ function openURL(url) {
 function getQuote() {
     $.ajax({
         headers: {
-            "X-Mashape-Key": "OivH71yd3tmshl9YKzFH7BTzBVRQp1RaKLajsnafgL2aPsfP9V",
+            "X-Mashape-Key": "4oY2w29yt2mshlq76bZrI3ruZJzIp1mZrO9jsndZC5TsqsVvBO",
             Accept: "application/json",
             "Content-Type": "application/x-www-form-urlencoded"
         },
-        url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
+        url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=movies',
         success: function (response) {
             var r = JSON.parse(response);
             currentQuote = r.quote;
